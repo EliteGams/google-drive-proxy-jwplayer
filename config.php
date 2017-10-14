@@ -1,5 +1,5 @@
 <?php
-$expire = time() + 14000;
+$expire = time() + 3600; //default expires in 1hr
 $dt = base64_decode($expire);
  
 		$encrypt_method = "AES-256-CBC";
