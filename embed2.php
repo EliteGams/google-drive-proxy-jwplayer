@@ -4,12 +4,7 @@ header('Pragma: no-cache'); // HTTP 1.0.
 header('Expires: 0'); // Proxies.
 $driver = $_GET['id'];
 include('simpdom.php');
-$udkux = $_SERVER['HTTP_REFERER'];
-if (strpos($udkux, 'mizi.ml') !== false || $udkux === null) {
 
-} else {
-  exit('no direct linking!');
-}
 $driver = preg_match('/([\w-_]{28})/',$driver,$driver)?$driver[1]:null;
 $e = time() + 14000;
 $md5 = md5($driver);
